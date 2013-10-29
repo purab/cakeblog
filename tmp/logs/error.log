@@ -1,0 +1,237 @@
+2013-10-29 11:32:04 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/var/www/html/cakeblog//Vendor/autoload.php' (include_path='/var/www/html/lib:.:/usr/share/pear:/usr/share/php') in [/var/www/html/cakeblog/Config/bootstrap.php, line 103]
+2013-10-29 11:32:04 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/var/www/html/cakeblog//Vendor/autoload.php' (include_path='/var/www/html/lib:.:/usr/share/pear:/usr/share/php')
+Stack Trace:
+#0 /usr/share/pear/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require() [http...', '/var/www/html/c...', 103)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/var/www/html/c...', 103, Array)
+#2 /usr/share/pear/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/var/www/html/c...', 103, Array)
+#3 /usr/share/pear/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 11:34:14 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/var/www/html/cakeblog//Vendor/autoload.php' (include_path='/var/www/html/lib:.:/usr/share/pear:/usr/share/php') in [/var/www/html/cakeblog/Config/bootstrap.php, line 103]
+2013-10-29 11:34:14 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/var/www/html/cakeblog//Vendor/autoload.php' (include_path='/var/www/html/lib:.:/usr/share/pear:/usr/share/php')
+Stack Trace:
+#0 /usr/share/pear/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'require() [http...', '/var/www/html/c...', 103)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/var/www/html/c...', 103, Array)
+#2 /usr/share/pear/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/var/www/html/c...', 103, Array)
+#3 /usr/share/pear/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 06:18:48 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /cakeblog/
+Stack Trace:
+#0 /usr/share/pear/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /usr/share/pear/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(183): Controller->constructClasses()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 06:25:16 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Posts/index.ctp',
+)
+Request URL: /cakeblog/posts
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 06:25:22 Error: [MissingActionException] Action PostsController::foot() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'foot',
+)
+Request URL: /cakeblog/posts/foot
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 06:25:35 Error: [MissingActionException] Action PostsController::foobar() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'foobar',
+)
+Request URL: /cakeblog/posts/foobar
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 06:25:40 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Posts/index.ctp',
+)
+Request URL: /cakeblog/posts/index
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 06:27:40 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakeblog/posts/view/1
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:00:37 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakeblog/users/login
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:01:21 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakeblog/users/login
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:01:54 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/login.ctp',
+)
+Request URL: /cakeblog/users/login
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:03:03 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/login.ctp',
+)
+Request URL: /cakeblog/users/login
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:04:08 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:07:02 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:07:38 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:13:51 Error: [MissingViewException] View file "/var/www/html/cakeblog/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/cakeblog/View/Users/index.ctp',
+)
+Request URL: /cakeblog/users/
+Stack Trace:
+#0 /usr/share/pear/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /usr/share/pear/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /usr/share/pear/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 07:30:47 Error: [MissingActionException] Action PostsController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'users',
+)
+Request URL: /cakeblog/posts/users/index
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:30:51 Error: [MissingActionException] Action PostsController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'users',
+)
+Request URL: /cakeblog/posts/users/
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:30:54 Error: [MissingActionException] Action PostsController::user() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'user',
+)
+Request URL: /cakeblog/posts/user/
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 07:31:06 Error: [MissingActionException] Action PostsController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'users',
+)
+Request URL: /cakeblog/posts/users/index
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-29 08:36:00 Error: [MissingActionException] Action PostsController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'users',
+)
+Request URL: /cakeblog/posts/users/index
+Stack Trace:
+#0 /usr/share/pear/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
