@@ -235,3 +235,12 @@ Stack Trace:
 #1 /usr/share/pear/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/html/cakeblog/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-10-29 10:24:37 Error: [CakeLogException] Could not load class File
+Stack Trace:
+#0 /var/www/html/cakeblog/lib/Cake/Log/LogEngineCollection.php(42): LogEngineCollection::_getLogger('File')
+#1 /var/www/html/cakeblog/lib/Cake/Log/CakeLog.php(199): LogEngineCollection->load('debug', Array)
+#2 /var/www/html/cakeblog/Config/bootstrap.php(96): CakeLog::config('debug', Array)
+#3 /var/www/html/cakeblog/lib/Cake/Core/Configure.php(94): include('/var/www/html/c...')
+#4 /var/www/html/cakeblog/lib/Cake/bootstrap.php(171): Configure::bootstrap(true)
+#5 /var/www/html/cakeblog/webroot/index.php(85): include('/var/www/html/c...')
+#6 {main}

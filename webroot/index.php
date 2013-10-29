@@ -18,6 +18,8 @@ if (!defined('DS')) {
 	define('DS', DIRECTORY_SEPARATOR);
 }
 
+
+
 /**
  * These defines should only be edited if you have CakePHP installed in
  * a directory layout other than the way it is distributed.
@@ -75,6 +77,12 @@ if (php_sapi_name() === 'cli-server') {
 	}
 	$_SERVER['PHP_SELF'] = '/' . basename(__FILE__);
 }
+
+define(
+    'CAKE_CORE_INCLUDE_PATH',
+    ROOT . DS . APP_DIR . '/Vendor/pear-pear.cakephp.org/CakePHP'
+);
+
 
 if (!defined('CAKE_CORE_INCLUDE_PATH')) {
 	if (function_exists('ini_set')) {
